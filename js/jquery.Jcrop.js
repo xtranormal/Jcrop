@@ -1140,12 +1140,12 @@
             .bind('touchmove.jcrop', trackTouchMove)
             .bind('touchend.jcrop', trackTouchEnd);
         }
-        if (trackDoc) {
+        else if (trackDoc) {
           $(document)
             .bind('mousemove.jcrop',trackMove)
             .bind('mouseup.jcrop',trackUp);
         }
-      } 
+      }
       //}}}
       function toBack() //{{{
       {
